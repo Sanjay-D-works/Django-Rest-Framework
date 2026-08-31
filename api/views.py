@@ -174,5 +174,8 @@ class EmployeesDetails(generics.RetrieveUpdateDestroyAPIView):
 ### Moselset
 
 class EmployeeViewset(viewsets.ModelViewSet):
-    
+    queryset = Employee.objects.all()
+    serializer_class = EmployeeSerializer
+
+
 
